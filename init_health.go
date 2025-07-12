@@ -12,7 +12,7 @@ func initializeWithHealthCheck() (string, string, error) {
 	if len(os.Args) > 1 {
 		baseURL = os.Args[1]
 	} else {
-		baseURL = "https://impactify.ro/api/rest/v1"
+		baseURL = "https://impactify.ro/api/rest/v1" // Default (production) base URL, can be overridden with command line argument
 	}
 
 	// Print the base path that is decided
