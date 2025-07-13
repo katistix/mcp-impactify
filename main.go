@@ -39,6 +39,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to register get_widget tool: %v", err)
 	}
+	err = server.RegisterTool("delete_widget", ToolDescriptions["delete_widget"], myService.handleDeleteWidget)
+	if err != nil {
+		log.Fatalf("Failed to register delete_widget tool: %v", err)
+	}
 
 	// Start the server
 	log.Println("Starting MCP server...") // Add a message before starting

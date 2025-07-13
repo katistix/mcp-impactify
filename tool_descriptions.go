@@ -40,4 +40,10 @@ Get details about a single widget.
 
 This tool provides details of a specific widget accessible to the current event.
 `,
+
+	"delete_widget": `
+Delete a single widget.
+
+This tool deletes a specific widget accessible to the current event.
+`,
 }
