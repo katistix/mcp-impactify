@@ -1,7 +1,7 @@
-package main
+package descriptions
 
 // ToolDescriptions holds the descriptions for each tool, allowing multiline strings.
-var ToolDescriptions = map[string]string{
+var GetDescriptions = map[string]string{
 	"get_event": `
 Get details about the event that the api key associated with this instance of the server is authorized to access.
 
@@ -39,11 +39,5 @@ Use this tool *ONLY IF the query is related to the chat history itself* and not 
 Get details about a single widget.
 
 This tool provides details of a specific widget accessible to the current event.
-`,
-
-	"delete_widget": `
-Delete a single widget.
-
-This tool deletes a specific widget accessible to the current event.
 `,
 }
